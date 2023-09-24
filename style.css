@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+.level-title {
+    font-family: 'Press Start 2P', cursive;
+    margin: 5%;
+    font-size: 3rem;
+    color: antiquewhite;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+    /* background-color: red; */
+    display: none;
+}
+.btn {
+    margin : 25px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #222327;
+    border-radius: 20%;
+    box-shadow:  3px 3px 5px #222327;
+}
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.start {
+  color: #0f0a0a;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 20px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+
+
+@media (max-width : 500px) {
+    .level-title {
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .start {
+        margin: 20px;
+    }
+    .container {
+        width: 100%;
+    }
+    .btn {
+        margin: 7px;
+        width: 135px;
+        height: 135px;
+        
+    }
+}
